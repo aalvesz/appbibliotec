@@ -1,9 +1,9 @@
-import 'package:bibliotec/app/pages/anneilha.dart';
-import 'package:bibliotec/app/pages/antesdevc.dart';
-import 'package:bibliotec/app/pages/bibliotecameia.dart';
-import 'package:bibliotec/app/pages/extraordinario.dart';
-import 'package:bibliotec/app/pages/homemdegiz.dart';
-import 'package:bibliotec/app/pages/roubalivros.dart';
+// import 'package:bibliotec/app/pages/anneilha.dart';
+// import 'package:bibliotec/app/pages/antesdevc.dart';
+// import 'package:bibliotec/app/pages/bibliotecameia.dart';
+// import 'package:bibliotec/app/pages/extraordinario.dart';
+// import 'package:bibliotec/app/pages/homemdegiz.dart';
+// import 'package:bibliotec/app/pages/roubalivros.dart';
 import 'package:flutter/material.dart';
 import '../pages/home.dart';
 
@@ -34,12 +34,12 @@ class Principal extends StatelessWidget {
      routes: {
       '/principal':(context) => Principal(),
       '/home':(context) => Home(),
-      '/anneilha':(context) => AnnedaIlha(),
-      '/antesdevc':(context) => AntesdeVc(),
-      '/bibliotecameia':(context) => BibliotecaMeia(),
-      '/extraordinario':(context) => Extraordinario(),
-      '/homemdegiz':(context) => HomemdeGiz(),
-      '/roubalivros':(context) => Roubalivros(),
+      // '/anneilha':(context) => AnnedaIlha(),
+      // '/antesdevc':(context) => AntesdeVc(),
+      // '/bibliotecameia':(context) => BibliotecaMeia(),
+      // '/extraordinario':(context) => Extraordinario(),
+      // '/homemdegiz':(context) => HomemdeGiz(),
+      // '/roubalivros':(context) => Roubalivros(),
 
      },
      initialRoute: '/home' ,
