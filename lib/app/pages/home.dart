@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BiblioTec'),
+        title: const Text('Bibliotec'),
       ),
       drawer: Drawer(
         child: ListView(
           children: [
-            const DrawerHeader(child: Text('BiblioTec 1.0')),
+            const DrawerHeader(child: Text('Bibliotec 1.0')),
             ListTile(
               title: const Text('Histórico'),
               onTap: () {},
@@ -28,14 +31,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/anneilha');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/annedailha.jpg'),
+                    image: AssetImage('/assets/01.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -55,14 +58,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/antesdevc');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/antesdevc.jpg'),
+                    image: AssetImage('/assets/02.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -82,14 +85,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/bibliotecameia');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/bibliotecameia.jpg'),
+                    image: AssetImage('/assets/03.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -109,14 +112,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/extraordinario');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/extraordinario.jpg'),
+                    image: AssetImage('/assets/04.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -136,14 +139,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/homemdegiz');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/homemdegiz.jpg'),
+                    image: AssetImage('/assets/05.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -163,14 +166,14 @@ class Home extends StatelessWidget {
                   elevation: 0.0,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
-                      side: BorderSide(color: Colors.transparent))),
+                      side: const BorderSide(color: Colors.transparent))),
               onPressed: () {
                 Navigator.pushNamed(context, '/roubalivros');
               },
-              child: Column(
+              child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('assets/roubalivros.jpg'),
+                    image: AssetImage('/assets/06.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -185,7 +188,7 @@ class Home extends StatelessWidget {
           ),
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
+      bottomNavigationBar: BottomNavigationBar(items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.home_outlined),
           label: 'Home',

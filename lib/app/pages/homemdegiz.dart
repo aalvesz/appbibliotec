@@ -1,27 +1,29 @@
 import 'package:flutter/material.dart';
 
 class Homemdegiz extends StatelessWidget {
+  const Homemdegiz({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           onPressed: () {
             Navigator.pop(context, '/home');
           },
         ),
       ),
       body: Column(children: [
-        Padding(padding: EdgeInsets.only(top: 10)),
-        Image(
+        const Padding(padding: EdgeInsets.only(top: 10)),
+        const Image(
             image: AssetImage('assets/homemdegiz.jpg'),
             width: 200,
             height: 300,
             fit: BoxFit.cover),
         Container(
-          padding: EdgeInsets.only(left: 15, top: 15),
-          child: Row(
+          padding: const EdgeInsets.only(left: 15, top: 15),
+          child: const Row(
             children: [
               Text(
                 'O Homem de Giz',
@@ -31,8 +33,8 @@ class Homemdegiz extends StatelessWidget {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 15),
-          child: Row(
+          padding: const EdgeInsets.only(left: 15),
+          child: const Row(
             children: [
               Text(
                 'C. J. Tudor',
@@ -45,8 +47,8 @@ class Homemdegiz extends StatelessWidget {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(left: 230, top: 0),
-          child: Row(children: [
+          padding: const EdgeInsets.only(left: 230, top: 0),
+          child: const Row(children: [
             Icon(Icons.star, color: Colors.amber),
             Icon(Icons.star, color: Colors.amber),
             Icon(Icons.star, color: Colors.amber),
@@ -55,8 +57,8 @@ class Homemdegiz extends StatelessWidget {
           ]),
         ),
         Container(
-          padding: EdgeInsets.all(10),
-          child: Row(
+          padding: const EdgeInsets.all(10),
+          child: const Row(
             children: [
               Expanded(
                   child: Text(
