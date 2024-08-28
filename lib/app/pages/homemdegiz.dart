@@ -17,7 +17,7 @@ class Homemdegiz extends StatelessWidget {
       body: Column(children: [
         const Padding(padding: EdgeInsets.only(top: 10)),
         const Image(
-            image: AssetImage('assets/homemdegiz.jpg'),
+            image: AssetImage('assets/05.jpg'),
             width: 200,
             height: 300,
             fit: BoxFit.cover),

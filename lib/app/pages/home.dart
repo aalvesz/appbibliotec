@@ -23,6 +23,7 @@ class Home extends StatelessWidget {
       body: GridView.count(
         scrollDirection: Axis.vertical,
         crossAxisCount: 2,
+        padding: EdgeInsets.only(top: 15),
         children: [
           Container(
             child: ElevatedButton(
@@ -38,7 +39,7 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/01.jpg'),
+                    image: AssetImage('assets/01.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -65,7 +66,7 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/02.jpg'),
+                    image: AssetImage('assets/02.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -92,7 +93,7 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/03.jpg'),
+                    image: AssetImage('assets/03.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -119,7 +120,7 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/04.jpg'),
+                    image: AssetImage('assets/04.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -146,7 +147,7 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/05.jpg'),
+                    image: AssetImage('assets/05.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
@@ -173,13 +174,121 @@ class Home extends StatelessWidget {
               child: const Column(
                 children: [
                   Image(
-                    image: AssetImage('/assets/06.jpg'),
+                    image: AssetImage('assets/06.jpg'),
                     width: 100,
                     height: 150,
                     fit: BoxFit.cover,
                   ),
                   Text(
                     'A menina que roubava livros',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: const BorderSide(color: Colors.transparent))),
+              onPressed: () {
+                Navigator.pushNamed(context, '/verity');
+              },
+              child: const Column(
+                children: [
+                  Image(
+                    image: AssetImage('assets/07.jpg'),
+                    width: 100,
+                    height: 150,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'Verity',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: const BorderSide(color: Colors.transparent))),
+              onPressed: () {
+                Navigator.pushNamed(context, '/assimacaba');
+              },
+              child: const Column(
+                children: [
+                  Image(
+                    image: AssetImage('assets/08.jpg'),
+                    width: 100,
+                    height: 150,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'É Assim que acaba',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: const BorderSide(color: Colors.transparent))),
+              onPressed: () {
+                Navigator.pushNamed(context, '/assimcomeca');
+              },
+              child: const Column(
+                children: [
+                  Image(
+                    image: AssetImage('assets/09.jpg'),
+                    width: 100,
+                    height: 150,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'É Assim que começa',
+                    style: TextStyle(color: Colors.black),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Container(
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0.0,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                      side: const BorderSide(color: Colors.transparent))),
+              onPressed: () {
+                Navigator.pushNamed(context, '/pequenoprincipe');
+              },
+              child: const Column(
+                children: [
+                  Image(
+                    image: AssetImage('assets/10.jpg'),
+                    width: 100,
+                    height: 150,
+                    fit: BoxFit.cover,
+                  ),
+                  Text(
+                    'O pequeno Príncipe',
                     style: TextStyle(color: Colors.black),
                   ),
                 ],

@@ -18,8 +18,8 @@ class AnnedaIlha extends StatelessWidget {
         const Padding(padding: EdgeInsets.only(top: 10)),
         const Image(
             image: AssetImage('assets/01.jpg'),
-            width: 200,
-            height: 150,
+            width: 240,
+            height: 350,
             fit: BoxFit.cover),
         Container(
           padding: const EdgeInsets.only(left: 15, top: 15),

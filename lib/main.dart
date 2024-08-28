@@ -1,9 +1,13 @@
 import 'package:bibliotec/app/pages/anneilha.dart';
 import 'package:bibliotec/app/pages/antesdevc.dart';
+import 'package:bibliotec/app/pages/assimacaba.dart';
+import 'package:bibliotec/app/pages/assimcomeca.dart';
 import 'package:bibliotec/app/pages/bibliotecameia.dart';
 import 'package:bibliotec/app/pages/extraordinario.dart';
 import 'package:bibliotec/app/pages/homemdegiz.dart';
+import 'package:bibliotec/app/pages/pequenoprincipe.dart';
 import 'package:bibliotec/app/pages/roubalivros.dart';
+import 'package:bibliotec/app/pages/verity.dart';
 import 'package:flutter/material.dart';
 import 'app/pages/home.dart';
 
@@ -19,7 +23,7 @@ class Principal extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.indigo,
           titleTextStyle: TextStyle(
             color: Colors.white,
             fontSize: 20,
@@ -42,6 +46,10 @@ class Principal extends StatelessWidget {
         '/extraordinario': (context) => Extraordinario(),
         '/homemdegiz': (context) => Homemdegiz(),
         '/roubalivros': (context) => Roubalivros(),
+        '/pequenoprincipe': (context) => Pequenoprincipe(),
+        '/assimacaba': (context) => AssimAcaba(),
+        '/assimcomeca': (context) => AssimComeca(),
+        '/verity': (context) => Verity(),
       },
       initialRoute: '/home',
     );

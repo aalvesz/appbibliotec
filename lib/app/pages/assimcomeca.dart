@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Roubalivros extends StatelessWidget {
-  const Roubalivros({super.key});
+class AssimComeca extends StatelessWidget {
+  const AssimComeca({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class Roubalivros extends StatelessWidget {
       body: Column(children: [
         const Padding(padding: EdgeInsets.only(top: 10)),
         const Image(
-            image: AssetImage('assets/06.jpg'),
+            image: AssetImage('assets/09.jpg'),
             width: 200,
             height: 300,
             fit: BoxFit.cover),
@@ -26,7 +26,7 @@ class Roubalivros extends StatelessWidget {
           child: const Row(
             children: [
               Text(
-                'A menina que roubava livros',
+                'É assim que começa',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w300),
               )
             ],
@@ -37,7 +37,7 @@ class Roubalivros extends StatelessWidget {
           child: const Row(
             children: [
               Text(
-                'Markus Zusak',
+                'Collen Hoover',
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w400,
@@ -53,7 +53,7 @@ class Roubalivros extends StatelessWidget {
             Icon(Icons.star, color: Colors.amber),
             Icon(Icons.star, color: Colors.amber),
             Icon(Icons.star, color: Colors.amber),
-            Icon(Icons.star, color: Colors.grey)
+            Icon(Icons.star, color: Colors.amber)
           ]),
         ),
         Container(
@@ -62,7 +62,7 @@ class Roubalivros extends StatelessWidget {
             children: [
               Expanded(
                   child: Text(
-                      'Traços de uma sobrevivente: a mãe comunista, perseguida pelo nazismo, envia Liesel e o irmão para o subúrbio pobre de uma cidade alemã, onde um casal se dispõe a adotá-los por dinheiro. O garoto morre no trajeto e é enterrado por um coveiro que deixa cair um livro na neve. É o primeiro de uma série que a menina vai surrupiar ao longo dos anos. O único vínculo com a família é esta obra, que ela ainda não sabe ler.'))
+                      'A história retoma a vida de Lily em um momento de transição. Ela está lidando com as consequências de seu divórcio e construindo uma nova vida. É nesse contexto que ela se reencontra com Atlas, seu primeiro amor, e a oportunidade de recomeçar um romance parece finalmente estar ao seu alcance.'))
             ],
           ),
         )
